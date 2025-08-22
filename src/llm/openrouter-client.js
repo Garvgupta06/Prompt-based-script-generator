@@ -2,8 +2,8 @@ const axios = require('axios');
 
 class OpenRouterClient {
   constructor(apiKey, model = 'openai/gpt-3.5-turbo') {
-    this.apiKey = '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';
-    this.model = 'openai/gpt-3.5-turbo';
+    this.apiKey = apiKey;
+    this.model = model;
     this.baseURL = 'https://openrouter.ai/api/v1';
   }
 
