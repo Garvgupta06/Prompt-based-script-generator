@@ -1,0 +1,35 @@
+{
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "axios": "^1.11.0",
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "dotenv": "^17.2.1"
+  },
+  "name": "prompt-driven-ssg",
+  "version": "1.0.0",
+  "description": "A CLI tool to generate static sites using AI prompts",
+  "main": "src/main.js",
+  "bin": {
+    "generate-site": "./bin/generate-site.js"
+  },
+  "scripts": {
+    "start": "node src/main.js",
+    "generate": "node src/main.js generate",
+    "list-models": "node src/main.js list-models",
+    "dev": "nodemon src/main.js",
+    "test": "node tests/test.js",
+    "check-structure": "node tests/check-structure.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "keywords": [
+    "static-site",
+    "ai",
+    "openrouter",
+    "code-generation"
+  ],
+  "author": "Garv Gupta",
+  "license": "MIT"
+}
