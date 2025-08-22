@@ -1,31 +1,33 @@
-# .gitignore
+# prod
+dist/
 
-# Dependencies
+# dev
+.yarn/
+!.yarn/releases
+.vscode/*
+!.vscode/launch.json
+!.vscode/*.code-snippets
+.idea/workspace.xml
+.idea/usage.statistics.xml
+.idea/shelf
+
+# deps
 node_modules/
+.wrangler
 
-# Environment variables
+# env
 .env
+.env.production
+.dev.vars
 
-# Generated sites/output
-generated-site/
-
-# OS generated files
-.DS_Store
-Thumbs.db
-
-# Log files
+# logs
+logs/
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# Runtime data and cache
-.npm
-.eslintcache
-
-# IDE/Editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# Optional: if you don't want package-lock.json in git
-# package-lock.json
+# misc
+.DS_Store

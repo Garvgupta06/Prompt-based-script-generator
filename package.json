@@ -1,35 +1,40 @@
 {
+  "name": "ai-static-site-generator",
+  "version": "2.0.0",
+  "description": "AI-Powered Static Site Generator CLI",
+  "main": "cli.js",
+  "bin": {
+    "generate-site": "./cli.js"
+  },
+  "scripts": {
+    "test": "node cli.js \"Create a modern portfolio website for a web developer\"",
+    "test-landing": "node cli.js \"Build a landing page for a SaaS product\" -t landing-page",
+    "test-basic": "node cli.js \"Create a basic business website\" -t basic"
+  },
+  "keywords": [
+    "cli",
+    "static-site-generator",
+    "ai",
+    "openrouter",
+    "web-development",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Garv Gupta",
+  "license": "MIT",
   "dependencies": {
-    "@google/generative-ai": "^0.24.1",
+    "@clack/prompts": "^0.11.0",
     "axios": "^1.11.0",
     "chalk": "^4.1.2",
     "commander": "^11.1.0",
-    "dotenv": "^17.2.1"
+    "dotenv": "^17.2.1",
+    "figlet": "^1.7.0",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^6.5.2",
+    "ora": "^5.4.1"
   },
-  "name": "prompt-driven-ssg",
-  "version": "1.0.0",
-  "description": "A CLI tool to generate static sites using AI prompts",
-  "main": "src/main.js",
-  "bin": {
-    "generate-site": "./bin/generate-site.js"
-  },
-  "scripts": {
-    "start": "node src/main.js",
-    "generate": "node src/main.js generate",
-    "list-models": "node src/main.js list-models",
-    "dev": "nodemon src/main.js",
-    "test": "node tests/test.js",
-    "check-structure": "node tests/check-structure.js"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.22"
-  },
-  "keywords": [
-    "static-site",
-    "ai",
-    "openrouter",
-    "code-generation"
-  ],
-  "author": "Garv Gupta",
-  "license": "MIT"
+  "engines": {
+    "node": ">=16.0.0"
+  }
 }
