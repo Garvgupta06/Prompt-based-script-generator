@@ -30,9 +30,7 @@
     "commander": "^11.1.0",
     "dotenv": "^17.2.1",
     "figlet": "^1.7.0",
-    "fs-extra": "^11.2.0",
-    "inquirer": "^6.5.2",
-    "ora": "^5.4.1"
+    "fs-extra": "^11.2.0"
   },
   "engines": {
     "node": ">=16.0.0"
