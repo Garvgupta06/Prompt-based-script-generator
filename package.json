@@ -1,34 +1,31 @@
 {
-  "name": "ai-static-site-generator",
+  "name": "ai-site-generator",
   "version": "2.0.0",
-  "description": "AI-Powered Static Site Generator CLI",
+  "description": "AI-Powered Website Generator CLI",
   "main": "cli.js",
   "bin": {
-    "generate-site": "./cli.js"
+    "ai-site-gen": "./cli.js"
   },
   "scripts": {
-    "test": "node cli.js \"Create a modern portfolio website for a web developer\"",
-    "test-landing": "node cli.js \"Build a landing page for a SaaS product\" -t landing-page",
-    "test-basic": "node cli.js \"Create a basic business website\" -t basic"
+    "start": "node cli.js",
+    "test": "node cli.js --no-logo"
   },
   "keywords": [
     "cli",
-    "static-site-generator",
+    "website-generator",
     "ai",
-    "openrouter",
-    "web-development",
     "html",
-    "css",
-    "javascript"
+    "web-development",
+    "cloudflare-worker"
   ],
   "author": "Garv Gupta",
   "license": "MIT",
   "dependencies": {
-    "@clack/prompts": "^0.11.0",
-    "axios": "^1.11.0",
+    "@clack/prompts": "^0.7.0",
+    "axios": "^1.6.0",
     "chalk": "^4.1.2",
     "commander": "^11.1.0",
-    "dotenv": "^17.2.1",
+    "dotenv": "^16.3.1",
     "figlet": "^1.7.0",
     "fs-extra": "^11.2.0"
   },
